@@ -11,7 +11,7 @@ def predict_species(sep_len, sep_width, pet_len, pet_width,scaler_path,model_pat
       with open(model_path, 'rb') as file2:
          model = pickle.load(file2)
 
-      dict = {'SepalLength':[sep_len], 'SepalWidth':[sep_width], 'PetalLength':[pet_len], 'PetalWidth':[pet_width]}
+      dict = {'SepalLengthCm':[sep_len], 'SepalWidthCm':[sep_width], 'PetalLengthCm':[pet_len], 'PetalWidthCm':[pet_width]}
 
       x_new = pd.DataFrame(dict)
 
